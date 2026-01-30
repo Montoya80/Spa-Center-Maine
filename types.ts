@@ -162,6 +162,10 @@ export interface SupabaseConfig {
   enabled: boolean;
 }
 
+export interface AIConfig {
+    geminiApiKey: string;
+}
+
 export interface BusinessConfig {
   schedule: DaySchedule[];
   blockedDates: string[]; 
@@ -178,6 +182,7 @@ export interface BusinessConfig {
   };
   emailConfig: EmailConfig;
   supabaseConfig?: SupabaseConfig;
+  aiConfig?: AIConfig;
   bankingInfo?: BankingInfo; 
 }
 
